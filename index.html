@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q3 Seatwork 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            font-family: Arial;
+            font-stretch: ultra-condensed;
+            background-color: #8ACE00;
+            }
+        span{
+            font-size: 40px;
+            color: lightblue;
+            }
+        #brat{
+            margin-top: 60px;
+            height: 370px;
+            width: 530px;
+        }
+        #box{
+            border: 2px dashed white;
+        }
+        #numX, #numY{
+            background-color: #8ACE00;
+            color: white;
+            font-size: 30px;
+        }
+        #info{
+            height: 35px;
+            width:35px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <br><br>
+
+    <div class="container">
+    <div class="row">
+
+    <div class="col-md-5">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEWKzgAAAAGLzwAAAAOO0wKJzAEhMAOFxQBWfwN1rQASGwA7WQEOFAGU3QEcJwN8uACAvwFBYgFdiwCR1wEABAAjNQEKEQJDZQITHQBbiAFyqAJ/vABIaQEJDgJ4sQElOQBjkwE6VQFQeAMuRQFqnAA1TQM+XQFagwQQGABMcQEdKwMVIgEJCgIpPQFmmAAsQQGa5QMcLQG+9PJyAAALHklEQVR4nO2cCZOquhLHIQRxQUECKsgqIO7e+f5f7nWHRTwzt+q9wleXzM3/1KmaCYv52Z2kuwOjKPrvlqLg/98rnf/71VZsGX+xJKH4koTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4koTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4koTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JOF/cQd93H9ZYzghQX2oN/8PDSYkhP5uwvYviIyXcTChYcWz2DKUj89X6BifuOcwQkL1YHrM1tPg445KKHj/GAiNylPV2z1VPosInTJsQ//ETQcTHi6qqk4chX6QEDpEjcIpbPCRwWYcTDidqKrrfZRQh5sZxaL0LUqH++koCQmx03KzOvxWQl1neppt1B0SfuB2YyRc2uFOVVfTX0xoHU1VvfxaQgKE4KS/2Ib/DsKFOUrCnwPw+i/7KfWhPz6qa3+7aUM4wnGo/5QNN7lH94P+/SBvfl35TjiemIbAL4wxympj9j6gTpF1fpgffR3hTdjaa4Y79b2UDGX8FCHBbvI/FUop7Y9JyBE4F6LXB5t2wr8MbjyCJzUX4Tl/7flqUdnLJV41sMryMUJizNJqWqWBrbPX8KmTBMgSqBGklf+IDUKbS6luB6njV5Xv8OYaEYANOsvQhocYfjaGuunHCI3AX+eel+THQ7HXSTP2iGIH/mH6sBQ73T6TpAydWMfBhQec6TF/Jl5yf5bbCi+qexP7/tmLVPVUnoG+sOmwNPFDhCkJwkukQSKlRbvMsUk9fHRK4kNi7rKH/cjBLKq7uU8tBoDMKLbJLsIL8KrNJXMsbl2qO95uF7lwrrm77r7Ws+Ww8PsjhLfEmYUrtZWZVzFhSkO4nWtq7hfrTXPwOKPQbKTl/KapL83vOLHAeNWn5qtVu5XBKAi98Pz16pUaeW3iQ8lsfVLV/HyeaPUxczGDYbp3crd3AVdSgUNCzjuNeuBqjoSDKkkfIVwll1eHsceeY/AJpSG8H+9tt6/n/ZLazp1z9YwIzvoscFLVD51ttdEQuqaJgOYkzycb3q9oETBSE27nqju571qSL8dYsuBY++xm5SWJVw9gcNSpAf6r+5fIvOHvkWlurovZGAiBEQ25qIqiyq7cmqsKl/qW8LS74SxjRq52L/Ql8Sd8jH0tDk6aptPscquHaKAzogfnNW8wk2x93DpDQ7cPEQLgs5rZsH4FB++GvV8EBm0JVRccz8zP07D0QouyfYg+e8v92Ia10rBnfnbChsQ3gNCO90UJNr6GhWXFe2NgSP8xQq+yMf5aMuvAWzzfht42hKBTlu6N+FE9DKYHJbZMKuOvJVywXC6NxxPGobY682vYX8YrpmFDc5ZPEW7ANoQHp3q8RZ/bhRajPcL8ATblRVBmTD30yW2sMFJnF9QIcYmoCf/InoZubX2I8JY8aNNdShxsisoA+tcSuquDDaEnj1mZtUbH/fL1uqgNHWC0mvB5Fgh5FaMjHEm9VNWuYQwW4183Xc7WOMwmKRgNV4s55y0I+htGnyw+wsy6KQNWZyFwFWMPcFz3GiKh8mbDkRCq99RmtAlFl3a1guVtfrAwK6pteApjiMnwBMikLJiMtPnWaoYYEFIWLCL07D0G7SPM8VU3i40mQNYVZjw8IDTBrKy14e6wV2hjMAXm2+y5cGzaEbJlHMJCitQjJZyfbaVxKMzvgicQRuvgZcNLatQn1Am9HQcB7si1HWDL2RaziSMP9sZIePH1NusFQhYvMGQpH9yGnHBSkPYr4Nk+LwRwEZx9GCuyG4RGoyWE/LDbCMPMaI8lazVxaEd4D6jeq18Q3BvnZGhmY28FZ7xNtOCz5wgJVaxEdXckzD5fNVzRcX3ghFEZM/2VyDa2w6oOMazAOR9LHrdtRkvoJinp9YXZfFPxMu0IzcV+2SMERCCBCMdx/MOxvF/mGx5714Rj9NJb/ujt1kL+Pp24WGfRW8Ld2n4nJAT4zmWSTHa9tGu8NsT1/I3Qv4PTXZGwXi1qwvYjcaoxHsdktXF7eJh8jNaGkA2+EzrPF2Fnw+4jMXb1y1M/Ab5hhjl2wg7xD8L1H4SQPND4MOnXBNx5Uj4jbcyEWfCDl66m7+OwO4Hq1aSrU2jm6pmdU/8YjXkc3v4ch5Xn4lyqIOGfNoTYIMg0ZAPfvK7ux0Ma2GQWjpvwnr7WQyCsV4uvivxgQ4LLZV153JUHxykgi4fIm0dt4yV0E6dbD4nCV3xwQL7if5tpqEKCHEtPURIWAEd4ZaDOuMY7DiGmIbQ303yL2l6EWAx2sLZ6m0wtHKcUy+MMsqfbmAlx3+I1DmGqxE1qtyzYN0IIZiA9RP75OlBw8wx3OHgG3K0WY/RS9VL1Im/InnIsfDfZ0/qdkJFgjTWZidNtUUEjdRK+4seMKqMkPIV7pdv/Y3oBGbC6wcLGdxsiIeZW+Yx1CRfWaS7jJlSzGGu5dRUDlkOcStsqxt/YMI+Z0n4nOtPPWJyKsvhPLx1LJUq9p0ZdpyFAOFtjquClBia3P9mwIeyiHELiDOPSWxn3Zxq+vaOPpF46P85aQl2pq4nZDKuJ9Ccbopc+A1o3YCBu+B7GqG456xFewxnOQyMhrCcO6AxlSrzGzaPVGatK31eLltBLdU6DVQ8l4FV9HJzkNQ5Pi4At+482/LOE0XrGK76MWryireYpbk9/X/EZqZ14F1pLHKeULuksvNZpxjMgda0N9/EjiCNGRKiu1oEB8QmZHZKorvLrPxGCDa3DFVd8b2phPEMVo1i3u4+csH1yTzMXaTCLx7Ez46qadj06gWUVYU18T3mw8kNMo+iPxEWT3aeBbdtW4GRz+PXWt2EdFKm7fLGtLDbseZPPxDQbDDRNLzuH+Y772w5GIZ7wnZAQGi9OmFm4q+PUdw7ZJML68QotnxQ6t2HnGe6pHMUe8O1yibDL5up6q0dlFtTbLg3hvF+noQZPDzVNm0+85OuEX8mpPKLrfjm4gYjPCN/b/N97sBE8qbDJF/dNL2ePcuhpTQOEp5awuYgq8bF3NrKesjT1eJSwR0LIILszrg4d9tjjcMIvTbuVftV86XwT/+m07xFgTGNqqnnsVxOp8ihPbZFGa2ap4Ame68KySvSuDoKHzan+DxP6T9O9rgPcT2oerzjlvt3O8ZTE568o+jrbrPscWAfttNnux6EWTUJIM+LjanO7HgO+C8lIPL3jqqppK3/go6vDCBWqB1V4PKd7YvkL7+S6m9UzfNjdGkaIXZyP28PDeE0XYCPdDg7lZR7dIvOSr33LUKj9OGzXoW/xLSwspzqLZLW7JmEw8NW4gYQE3+yKrT14kh2k0MdzVcQGT2vb29t4gq2/PZwG0YxVOIdwGx78Ymbw5xbxvLjdkMJXLoLUn1bpzBj49tNAQgzT6tAKd3eB1tYxtGlXMDRHfcLbh/CaMMMdGcvQ+YOXevP4Kd9IVupFhTcPnGaUDxDWL5nxb53n67iR//aoMKnfQnv7kHovmG+X0vYH0jxp28s4mtdThzEOJuyeY+bfe9vdbyf8dFXL3n9I+u2Uj7wQN9yGncj/+EZwZ6O/+/zPvGH8QcKRShKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4koTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4koTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4koTiSxKKr38D3+8mROm/Xf8BsIz4flOtgukAAAAASUVORK5CYII=" id="brat">
+    </div>
+
+   
+    <div class="col-md-6" id="box">
+    <h3>Hi, my name is <span>Charli XCX</span>. Let's test if you actually deserve a BRAT album from me. <br><br> Given: 
+     </h3>
+     <h5>
+        <form class="form-group">
+            <label>Enter a value for <kbd>B</kbd>:</label><br><br>
+            <input class="form-control btn-default" type="number" id="numB">
+            <br>
+            <label>Enter a value for <kbd>R</kbd>:</label><br><br>
+            <input class="form-control btn-default" type="number" id="numR">
+            <br><br>
+
+            <details ontoggle="message()">
+                <summary>Click here</summary>
+                    <i>Click the buttons below to calculate.</i>
+            </details>
+
+        </form>
+    </h5>
+        
+    </div>
+</div>
+</div>
+    <script>
+    function product(){
+    var numB=document.getElementById("numB").value;
+    var numR=document.getElementById("numR").value;
+    var prod=numB * numR;
+    window.alert('The product of B and R is ' + prod );
+    }
+    
+    function power(){
+    var numA=document.getElementById("numB").value;
+    var numB=document.getElementById("numR").value;
+    var exp=numB ** numR;
+    window.alert('a raised to b is ' + exp );
+        
+    }
+     
+    function remainder(){
+    var numB=document.getElementById("numB").value;
+    var numR=document.getElementById("numR").value;
+    var mod=numB % numR;
+    window.alert('The remainder is ' + mod );
+        
+    }
+     
+
+    function compare(){
+    var numB=document.getElementById("numB").value;
+    var numR=document.getElementById("numR").value;
+    var comp=Number(numB) == Number(numR);
+    window.alert('Is B equal to R? Answer: ' + comp );
+        
+    }
+
+
+    function message() {
+              alert("you're not so Julia. solve!");
+            }
+    </script>
+
+    <br><br><br>
+
+    <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6 d-grid">
+        <button onclick="product()" type="submit" class="btn btn-success btn-block">product of B and R</button>
+       </div>
+
+        <div class="col-md-6 d-grid">
+       <button onclick="power()" type="submit" class="btn btn-success btn-block">B raise to R</button>
+        </div>
+    
+    </div>
+<br>
+    <div class="row">
+  
+        <div class="col-md-6 d-grid">
+        <button onclick="remainder()" type="submit" class="btn btn-success btn-block">get the remainder</button>
+         </div>
+
+        <div class="col-md-6 d-grid">
+        <button onclick="compare()" type="submit" class="btn btn-success btn-block">check if B is equal to R</button>
+        </div>
+  
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {text-align: center;
+
+}
+
+.header {background-color: #8ACE00;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+#drink {width: 100%;
+
+}
+
+.content {color: white;
+     	padding: 20px;
+        background-color: #f7a072; 
+        border-radius: 5px;
+}
+
+#d {width: 35%;
+	background-color: #540b0e;
+}
+#cherry {width: 65%; 
+}
+
+#chery {background-color: #800e13;
+
+}
+
+#mojito {width: 65%;
+
+}
+
+#moj {background-color: #efe9ae;
+        color: brown;
+
+}
+
+#f {background-color: #4f772d;
+
+}
+
+#ff {width: 35%;
+    background-color: #4f772d;
+        color: brown;
+}
+
+#about {color: white
+
+}
+
+#m {background-color: #006d77
+}
+
+
+#mm {width: 35%;
+    background-color: #006d77;
+    color: #640d14;
+}
+
+#mermaid {width: 65%;
+
+}
+
+#mer {background-color: #83c5be;
+
+
+}
+
+#ss {width: 35%;
+    background-color: #ffdd00;
+
+}
+
+#s {background-color: #ffdd00;
+
+}
+
+#sparkling {width: 65%;
+
+}
+
+#spark {background-color: #ffca3a;
+
+}
